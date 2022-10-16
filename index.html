@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Projects</a>
+        <a href="#">Earnings</a>
+        <a href="#">Profile</a>
+    </div>
+
+    <div id="mainContent" class="w3-container main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <!-- <h2>Active Tabs</h2> -->
+        <p class="user-bar">Hi, User</p>
+
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'projects')">My
+                Projects(13)</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'explore')">Explore</button>
+        </div>
+        <div id="projects" class="city">
+            <div class="oyo-card">
+                <p>
+                    <label>OYO</label>
+                    <button class="card-button">Submit Work</button>
+                </p>
+                <p>
+                    <span>
+                        <label>Diwali Campaign</label>
+                        <p>This is a campaign to create stunning videos.</p>
+                    </span>
+                    <span>
+                        2500
+                    </span>
+
+                </p>
+            </div>
+        </div>
+
+        <div id="explore" class="city" style="display:none">
+            <h2>explore</h2>
+            <p>This is explore section</p>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
